@@ -16,8 +16,6 @@ class Results extends React.Component {
             && selectedCountries.indexOf(bug.country) > -1;
         }
       })
-    console.log(match);
-
 
     var result = [];
     match.reduce((res, item) => {
@@ -35,7 +33,6 @@ class Results extends React.Component {
     result.sort((a, b) => {
       return b.qty - a.qty
     });
-    console.log(result);
 
     let display;
     if (selectedCountries.length > 0 && selectedDevices.length > 0) {

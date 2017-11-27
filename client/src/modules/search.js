@@ -14,7 +14,7 @@ const initialState = {
   countries: [],
   devices: [],
   initialData: [],
-  isFetching: false,
+  isFetching: true,
   lastUpdated: 0,
 }
 
@@ -103,7 +103,6 @@ export const requestData = () => {
 }
 
 export const receiveData = (response) => {
-  console.log(response);
   return dispatch => {
     dispatch({
       type: RECEIVE_DATA,

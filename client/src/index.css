@@ -44,6 +44,13 @@ a:-webkit-any-link {
   padding-left: 10%;
 }
 
+@media screen and (max-width: 700px) {
+  .App-title {
+      padding-left: 0%;
+      text-align: center;
+  }
+}
+
 .landing-wrapper {
   z-index: -1;
   background-image: url('landing-background.jpeg');
@@ -83,6 +90,12 @@ a:-webkit-any-link {
   overflow: auto;
 }
 
+.countries,
+.devices {
+  border: 1px solid rgb(67, 68, 69);
+  margin-top: 20px;
+}
+
 .selectorBtn {
   color: rgb(26,126,190);
   background-color: white;
@@ -91,20 +104,25 @@ a:-webkit-any-link {
 }
 
 .selected {
-  background-color: black;
+  background-color: rgb(67, 68, 69);
   color: white;
   border: 1px solid white;
+}
+
+.country-div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.country {
+  height: 40px;
 }
 
 .device-div {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  border: 3px solid black;
-}
-
-.country {
-  height: 40px;
 }
 
 .device {
@@ -114,11 +132,16 @@ a:-webkit-any-link {
   flex-grow: 1;
 }
 
+.header {
+  margin-top: 0px;
+  color: white;
+  background-color: rgb(26,126,190);
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+}
 
 .matches-header {
-  color: white;
-  background-color: black; 
-  margin-top: 0px;
   margin-bottom: 0px;
 }
 
@@ -131,10 +154,14 @@ a:-webkit-any-link {
 
 .match-name {
   color: white;
-  background-color: rgb(26,126,190);
-  height: 40px;
-  line-height: 40px;
+  background-color: rgb(67, 68, 69);
+  height: 30px;
+  line-height: 30px;
   vertical-align: middle;
+}
+
+.match-name:nth-child(1) {
+  margin-top: 0px;
 }
 
 .match-list {

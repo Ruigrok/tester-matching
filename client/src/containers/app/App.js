@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   render(props) {
-    return (
+    return (!this.props.isFetching &&
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">
@@ -28,6 +28,7 @@ class App extends Component {
 }
 
 const mapStateToProps = state => ({
+  isFetching: state.search.isFetching,
   initialData: state.search.initialData,
 })
 

@@ -11,10 +11,10 @@ export const CLEAR_COUNTRIES = 'search/CLEAR_COUNTRIES'
 export const CLEAR_DEVICES = 'search/CLEAR_DEVICES'
 
 const initialState = {
+  isFetching: '',
   countries: [],
   devices: [],
   initialData: [],
-  isFetching: true,
   lastUpdated: 0,
 }
 

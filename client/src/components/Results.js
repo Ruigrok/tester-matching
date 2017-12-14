@@ -44,7 +44,6 @@ class Results extends React.Component {
               <ul className={'match-list'}>
                 <li>{tester.qty} bugs filed for devices in search</li>
               </ul>
-
             </div>
           )
         })
@@ -66,7 +65,7 @@ class Results extends React.Component {
     return (
 
       <div className={'results-div'}>
-        <h3 className={'matches-header'}>Matches</h3>
+        <h3 className={'header matches-header'}>Matches</h3>
         {display}
       </div>
     )
